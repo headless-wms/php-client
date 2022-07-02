@@ -1,2 +1,5 @@
-# php-client
-This PHP client allows you to connect to the Headless WMS API
+# Headless WMS PHP Client
+With this PHP client you can connect to our API and integrate it in your application. 
+
+## Getting started
+Make sure you created an account on our website 

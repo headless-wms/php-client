@@ -22,7 +22,7 @@ class Client
         $this->httpClient = new \GuzzleHttp\Client([
             'base_uri' => 'https://headless-wms.com/api/' . $_ENV['API_VERSION'] . '/',
             'headers' => [
-                'Authorization' => 'Bearer ' . $_ENV['API_KEY'],
+                'Authorization' => 'Bearer ' . $_ENV['API_KEY'] . ', Basic ' . base64_encode($_ENV['USERNAME'] . ':' . $_ENV['PASSWORD']),
                 'Accept' => 'application/json'
             ],
         ]);
@@ -61,6 +61,14 @@ class Client
     /**
      * @throws GuzzleException
      */
+    public function generateApiToken()
+    {
+        return $this->post('tokens');
+    }
+
+    /**
+     * @throws GuzzleException
+     */
     public function createProduct($parameters = [])
     {
         return $this->post('products', $parameters);
@@ -71,6 +79,6 @@ class Client
      */
     public function getAllProducts($parameters = [])
     {
-        return $this->httpClient->get('products', $parameters);
+        return $this->get('products', $parameters);
     }
 }
