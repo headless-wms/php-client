@@ -68,6 +68,16 @@ class Client
         return $this->post('tokens');
     }
 
+    public function setApiKey($apiKey)
+    {
+        $this->apiKey = $apiKey;
+    }
+
+    public function getApiKey()
+    {
+        return $this->apiKey;
+    }
+    
     /**
      * @throws GuzzleException
      */
