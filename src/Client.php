@@ -9,20 +9,22 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 class Client
 {
-    protected $baseUrl;
     protected $httpClient;
+    protected $apiVersion = 'v1';
+    protected $apiKey;
+    protected $email;
+    protected $password;
 
-    public function __construct()
+    public function __construct($apiKey, $email, $password)
     {
-        $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
-        $dotenv->load();
-
-        $this->baseUrl = 'https://headless-wms.com/api/' . $_ENV['API_VERSION'];
+        $this->apiKey = $apiKey;
+        $this->email = $email;
+        $this->password = $password;
 
         $this->httpClient = new \GuzzleHttp\Client([
-            'base_uri' => 'https://headless-wms.com/api/' . $_ENV['API_VERSION'] . '/',
+            'base_uri' => 'https://headless-wms.com/api/' . $this->apiVersion . '/',
             'headers' => [
-                'Authorization' => 'Bearer ' . $_ENV['API_KEY'] . ', Basic ' . base64_encode($_ENV['USERNAME'] . ':' . $_ENV['PASSWORD']),
+                'Authorization' => 'Bearer ' . $this->apiKey . ', Basic ' . base64_encode($this->email . ':' . $this->password),
                 'Accept' => 'application/json'
             ],
         ]);
