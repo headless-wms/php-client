@@ -19,7 +19,6 @@
     "require": {
         "php": ">=5.5",
         "ext-curl": "*",
-        "vlucas/phpdotenv": "^5.4",
         "guzzlehttp/guzzle": "^7.0",
         "ext-json": "*"
     },
