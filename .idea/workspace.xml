@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0ca37e2-afba-49e8-b177-9652aff816ad" name="Changes" comment="feat: generate api token example working">
+    <list default="true" id="d0ca37e2-afba-49e8-b177-9652aff816ad" name="Changes" comment="refactor: rename">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/create_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/examples/create_product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/generate_api_token.php" beforeDir="false" afterPath="$PROJECT_DIR$/examples/generate_api_token.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/get_all_products.php" beforeDir="false" afterPath="$PROJECT_DIR$/examples/get_all_products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Client.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +74,7 @@
       <updated>1656702248796</updated>
       <workItem from="1656702250221" duration="10135000" />
       <workItem from="1656761647195" duration="762000" />
-      <workItem from="1656762588148" duration="156000" />
+      <workItem from="1656762588148" duration="787000" />
     </task>
     <task id="LOCAL-00001" summary="feat: working examples">
       <created>1656758971512</created>
@@ -101,7 +97,28 @@
       <option name="project" value="LOCAL" />
       <updated>1656761791124</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: credentials in constructor">
+      <created>1656762766525</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656762766525</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: get and set API key">
+      <created>1656762874529</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656762874529</updated>
+    </task>
+    <task id="LOCAL-00006" summary="refactor: rename">
+      <created>1656763171541</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656763171541</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +138,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: working examples" />
     <MESSAGE value="feat: generate api token example working" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: generate api token example working" />
+    <MESSAGE value="feat: credentials in constructor" />
+    <MESSAGE value="feat: get and set API key" />
+    <MESSAGE value="refactor: rename" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: rename" />
   </component>
 </project>
