@@ -2,10 +2,7 @@
 
 namespace HeadlessWms\Api;
 
-use Dotenv\Dotenv;
 use GuzzleHttp\Exception\GuzzleException;
-
-require_once __DIR__ . '/../vendor/autoload.php';
 
 class Client
 {
