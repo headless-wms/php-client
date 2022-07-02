@@ -1,0 +1,31 @@
+{
+    "name": "headless-wms/php-client",
+    "description": "This PHP client allows you to connect to the Headless WMS API",
+    "type": "library",
+    "keywords": [
+        "headless-wms",
+        "api",
+        "php",
+        "wms"
+    ],
+    "homepage": "https://github.com/headless-wms/php-client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Floris Meccanici",
+            "email": "info@headless-wms.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "ext-curl": "*",
+        "vlucas/phpdotenv": "^5.4",
+        "guzzlehttp/guzzle": "^7.0",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "HeadlessWms\\Api\\": "src"
+        }
+    }
+}
